@@ -126,4 +126,36 @@ extern NSString * const CANCEL_STRING;
 extern NSString * const SUBMIT_STRING;
 extern NSString * const OK_STRING;
 
+/* BLE Constants */
+
+// Temp UUIDs
+#define UUID_TEMPERATURE_SERVICE @"F000AA00-0451-4000-B000-000000000000"
+#define UUID_TEMPERATURE_DATA    @"F000AA01-0451-4000-B000-000000000000"
+#define UUID_TEMPERATURE_CONFIG  @"F000AA02-0451-4000-B000-000000000000"
+
+// Humidity
+#define UUID_HUMIDITY_SERVICE @"F000AA20-0451-4000-B000-000000000000"
+#define UUID_HUMIDITY_DATA    @"F000AA21-0451-4000-B000-000000000000"
+#define UUID_HUMIDITY_CONFIG  @"F000AA22-0451-4000-B000-000000000000"
+
+// Room Monitor
+/*
+ #define UUID_ROOM_MONITOR_SERVICE                                 @"8C877E45-EE0A-4747-B9CB-4E17B11FC3EC"
+ #define roomMonitorMostRecentLightLevelCharateristicUUIDString    @"8C8724F4-EE0A-4747-B9CB-4E17B11FC3EC"
+ #define roomMonitorMostRecentActivityStateUUIDString              @"8C870296-EE0A-4747-B9CB-4E17B11FC3EC"
+ #define roomMonitorHistoricalLightLevelUUIDString                 @"8C8794B9-EE0A-4747-B9CB-4E17B11FC3EC"
+ #define roomMonitorHistoricalActivityStateUUIDString              @"8C8765DD-EE0A-4747-B9CB-4E17B11FC3EC"
+ #define roomMonitorTimeOfMostRecentMeasurementUUIDString          @"8C87AEDD-EE0A-4747-B9CB-4E17B11FC3EC"
+ #define roomMonitorTimeOfHistoricalMeasurementUUIDString          @"8C87BCD4-EE0A-4747-B9CB-4E17B11FC3EC"
+ */
+
+//GDP Node
+#define UUID_ROOM_MONITOR_SERVICE                                 @"AC8BA2AE-F020-4395-A301-6E833EBD4571" //tray node
+#define roomMonitorMostRecentLightLevelCharateristicUUIDString    @"AC8B3A9A-F020-4395-A301-6E833EBD4571" //light level
+#define roomMonitorMostRecentActivityStateUUIDString              @"AC8BA6D8-F020-4395-A301-6E833EBD4571" //internal temp
+#define roomMonitorHistoricalLightLevelUUIDString                 @"8C8794B9-EE0A-4747-B9CB-4E17B11FC3EC"
+#define roomMonitorHistoricalActivityStateUUIDString              @"8C8765DD-EE0A-4747-B9CB-4E17B11FC3EC"
+#define roomMonitorTimeOfMostRecentMeasurementUUIDString          @"8C87AEDD-EE0A-4747-B9CB-4E17B11FC3EC"
+#define roomMonitorTimeOfHistoricalMeasurementUUIDString          @"8C87BCD4-EE0A-4747-B9CB-4E17B11FC3EC"
+
 @end

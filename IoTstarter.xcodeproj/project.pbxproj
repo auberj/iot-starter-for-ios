@@ -120,6 +120,12 @@
 		27B5928619EC75DF00593424 /* ic_stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B5928519EC75DF00593424 /* ic_stats.png */; };
 		27E4809F19F8560F00762CEB /* ic_chevron-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 274B158A19F6F6F500FF15DE /* ic_chevron-right.png */; };
 		27E480A019F8561200762CEB /* ic_chevron-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 274B158B19F6F6F500FF15DE /* ic_chevron-left.png */; };
+		D8A6F9BD1DEF0C490019E603 /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6F9BC1DEF0C490019E603 /* TemperatureViewController.m */; };
+		D8A6F9BE1DEF0C490019E603 /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6F9BC1DEF0C490019E603 /* TemperatureViewController.m */; };
+		D8A6F9BF1DEF0C490019E603 /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A6F9BC1DEF0C490019E603 /* TemperatureViewController.m */; };
+		D8A6F9C11DEF0C550019E603 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A6F9C01DEF0C550019E603 /* CoreBluetooth.framework */; };
+		D8A6F9C21DEF0C550019E603 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A6F9C01DEF0C550019E603 /* CoreBluetooth.framework */; };
+		D8A6F9C31DEF0C550019E603 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A6F9C01DEF0C550019E603 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +218,9 @@
 		27B5928119EC734700593424 /* ic_file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_file.png; sourceTree = "<group>"; };
 		27B5928319EC74CF00593424 /* iotlogosmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iotlogosmall.png; sourceTree = "<group>"; };
 		27B5928519EC75DF00593424 /* ic_stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_stats.png; sourceTree = "<group>"; };
+		D8A6F9BB1DEF0C410019E603 /* TemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureViewController.h; sourceTree = "<group>"; };
+		D8A6F9BC1DEF0C490019E603 /* TemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureViewController.m; sourceTree = "<group>"; };
+		D8A6F9C01DEF0C550019E603 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreBluetooth.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +231,7 @@
 				27468DB719CB248800435340 /* CoreGraphics.framework in Frameworks */,
 				27468DB919CB248800435340 /* UIKit.framework in Frameworks */,
 				27468DB519CB248800435340 /* Foundation.framework in Frameworks */,
+				D8A6F9C21DEF0C550019E603 /* CoreBluetooth.framework in Frameworks */,
 				27468E0319CB43D500435340 /* libiosMQTT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +242,7 @@
 			files = (
 				27468DD719CB248800435340 /* XCTest.framework in Frameworks */,
 				27468DD919CB248800435340 /* UIKit.framework in Frameworks */,
+				D8A6F9C31DEF0C550019E603 /* CoreBluetooth.framework in Frameworks */,
 				27468DD819CB248800435340 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +254,7 @@
 				27A0C7AF19EEC766009FA500 /* CoreGraphics.framework in Frameworks */,
 				27A0C7B019EEC766009FA500 /* UIKit.framework in Frameworks */,
 				27A0C7B119EEC766009FA500 /* Foundation.framework in Frameworks */,
+				D8A6F9C11DEF0C550019E603 /* CoreBluetooth.framework in Frameworks */,
 				27A0C7B219EEC766009FA500 /* libiosMQTT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +285,7 @@
 		27468DB319CB248800435340 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8A6F9C01DEF0C550019E603 /* CoreBluetooth.framework */,
 				27468DB419CB248800435340 /* Foundation.framework */,
 				27468DB619CB248800435340 /* CoreGraphics.framework */,
 				27468DB819CB248800435340 /* UIKit.framework */,
@@ -286,6 +299,8 @@
 			children = (
 				27468DC319CB248800435340 /* AppDelegate.h */,
 				27468DC419CB248800435340 /* AppDelegate.m */,
+				D8A6F9BB1DEF0C410019E603 /* TemperatureViewController.h */,
+				D8A6F9BC1DEF0C490019E603 /* TemperatureViewController.m */,
 				27468DCF19CB248800435340 /* Images.xcassets */,
 				2763729919D3419A00706945 /* icons */,
 				27468E0419CB43DB00435340 /* include */,
@@ -501,6 +516,10 @@
 					27468DD419CB248800435340 = {
 						TestTargetID = 27468DB019CB248800435340;
 					};
+					27A0C79F19EEC766009FA500 = {
+						DevelopmentTeam = SD55QTFVQ7;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 27468DAC19CB248800435340 /* Build configuration list for PBXProject "IoTstarter" */;
@@ -622,6 +641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277C44391A2F92770097313A /* IoTProfile.m in Sources */,
+				D8A6F9BE1DEF0C490019E603 /* TemperatureViewController.m in Sources */,
 				27468DFA19CB409800435340 /* TopicFactory.m in Sources */,
 				275172091A1293FD00BC0072 /* DPadView.m in Sources */,
 				277C443E1A2FAD780097313A /* ProfilesTableViewController.m in Sources */,
@@ -645,6 +665,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27468DE319CB248800435340 /* IoTstarterTests.m in Sources */,
+				D8A6F9BF1DEF0C490019E603 /* TemperatureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +674,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277C44381A2F92770097313A /* IoTProfile.m in Sources */,
+				D8A6F9BD1DEF0C490019E603 /* TemperatureViewController.m in Sources */,
 				27A0C7A119EEC766009FA500 /* TopicFactory.m in Sources */,
 				275172081A12911D00BC0072 /* DPadView.m in Sources */,
 				277C443D1A2FAD780097313A /* ProfilesTableViewController.m in Sources */,
@@ -798,7 +820,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Robertson (3GZCWLB5EN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Robertson (3GZCWLB5EN)";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarter/IoTstarter-Info.plist";
@@ -821,7 +846,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Robertson (3GZCWLB5EN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Robertson (3GZCWLB5EN)";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarter/IoTstarter-Info.plist";
@@ -845,6 +873,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
@@ -867,6 +896,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
@@ -918,7 +948,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Robertson (3GZCWLB5EN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Robertson (3GZCWLB5EN)";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarter/IoTstarter-Info.plist";
@@ -942,6 +975,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
@@ -958,8 +992,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SD55QTFVQ7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarter-Info.plist";
@@ -968,6 +1007,7 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = elec6245.com.ibm.cio.be.robertmp.IoTstarter;
 				PRODUCT_NAME = IoTstarter;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -980,8 +1020,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SD55QTFVQ7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarter-Info.plist";
@@ -990,6 +1035,7 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = elec6245.com.ibm.cio.be.robertmp.IoTstarter;
 				PRODUCT_NAME = IoTstarter;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -1002,8 +1048,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: International Business Machines";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: International Business Machines";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SD55QTFVQ7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IoTstarter/IoTstarter-Prefix.pch";
 				INFOPLIST_FILE = "IoTstarter-Info.plist";
@@ -1012,6 +1063,7 @@
 					"$(PROJECT_DIR)/IoTstarter",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = elec6245.com.ibm.cio.be.robertmp.IoTstarter;
 				PRODUCT_NAME = IoTstarter;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
